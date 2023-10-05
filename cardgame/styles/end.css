@@ -1,0 +1,78 @@
+.end_body {
+    padding-top: 12.5vw;
+    width: inherit;
+    height: inherit;
+    background: url(../images/end_back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.end_logo_container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.2vw;
+}
+.end_logo {
+    margin: 0 auto;
+    height: auto;
+    width: 30.28vw;
+}
+.end_title {
+    font-size: 3.68vw;
+    font-family: 'VKDisplay Medium';
+    color: #fff;
+    margin-top: 2.22vw;
+    margin-bottom: 2.15vw;
+    position: relative;
+    opacity: 0;
+    text-align: center;
+}
+.end_line {
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 2.15vw;
+}
+.end_image {
+    height: 13.89vw;
+}
+.end_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    margin: 0 auto;
+    opacity: 0;
+    padding: 0 6.74vw;
+}
+.info_text {
+    text-align: center;
+    width: 75.49vw;
+    color: #fff;
+    font-size: 3.68vw;
+    font-family: 'VKDisplay Medium';
+    margin-bottom: 2.22vw;
+}
+.info_button {
+    width: 25.8vw;
+    padding-top: 1vw;
+    padding-bottom: 1.7vw;
+    background-color: #0077FF;
+    color: #fff;
+    font-family: 'VKDisplay DemiBold';
+    font-size: 3.47vw;
+    border-radius: 3.13vw;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="styles/null.css">
+    <link rel="stylesheet" href="styles/intro.css">
+    <link rel="stylesheet" href="styles/game.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/end.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+        <section class="modal_container none">
+            <div class="modal">
+                <div class="modal_title">Найди пару</div>
+                <div class="modal_text">
+                    Открывайте карточки и запоминайте картинки,
+                    чтобы найти две одинаковые карточки
+                </div>
+                <button class="modal_button">искать</button>
+            </div>
+        </section>
+
+
+        <section class="intro_container">
+            <img src="./images/intro/intro_border.png" alt="intro_border" class="intro_border">
+            <div class="intro_logo">
+                <img class="logo_image" src="./images/logo.png" alt="logo">
+            </div>    
+            <div class="intro_info">
+                <div class="intro_title">Найдите <br> пару!</div>
+                <button class="intro_button">играть</button>
+            </div>
+            <div class="intro_cards">
+                <div class="intro_cards-up">
+                    <div class="intro_card card-front">
+                        <img src="./images/men/ildar.png" alt="ildar">
+                        <div class="intro_card-name">Эльдар Джарахов</div>
+                    </div>
+                </div>
+                <div class="intro_cards-bottom">
+                    <div class=" intro_card card_back"></div>
+                    <div class=" intro_card card_back"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="game_container none">
+            <div class="container">
+
+            <div class="game_logo">
+                <img class="logo_image" src="./images/logo.png" alt="logo">
+            </div>
+            <div class="card_container">
+                <div class="stroke">
+                    <div class="card_item" data-framework="ildar">
+                        <div class="front">
+                            <img src="images/men/ildar.png" alt="ildar_image" class="front_item">
+                            <div class="text">Эльдар <br> Джарахов</div>
+                        </div>
+                        <img src="images/card/back.png" alt="back" class="back">
+                    </div>
+                    <div class="card_item" data-framework="ildar">
+                        <div class="front">
+                            <img src="images/men/ildar.png" alt="ildar_image" class="front_item">
+                            <div class="text">Эльдар <br> Джарахов</div>
+                        </div>
+                        <img src="images/card/back.png" alt="back" class="back">
+                    </div>
+                    <div class="card_item" data-framework="garik">
+                        <div class="front">
+                            <img src="images/men/garik.png" alt="garik" class="front_item">
+                            <div class="text">Гарик <br> Харламов</div>
+                        </div>
+                        <img src="images/card/back.png" alt="back" class="back">
+                    </div>
+                    <div class="card_item" data-framework="garik">
+                        <div class="front">
+                            <img src="images/men/garik.png" alt="garik" class="front_item">
+                            <div class="text">Гарик <br> Харламов</div>
+                        </div>
+                        <img src="images/card/back.png" alt="back" class="back">
+                    </div>        
+                </div>
+
+                <div class="stroke">
+                    <div class="card_item" data-framework="azamat">
+                        <div class="front">
+                            <img src="images/men/azamat.png" alt="ildar_image" class="front_item">
+                            <div class="text">Азамат <br> Мусагалиев</div>
+                        </div>
+                        <img src="images/card/back.png" alt="back" class="back">
+                    </div>
+                    <div class="card_item" data-framework="azamat">
+                        <div class="front">
+                            <img src="images/men/azamat.png" alt="ildar_image" class="front_item">
+                            <div class="text">Азамат <br> Мусагалиев</div>
+                        </div>
+                        <img src="images/card/back.png" alt="back" class="back">
+                    </div>
+                    <div class="card_item" data-framework="nurlan">
+                        <div class="front">
+                            <img src="images/men/nurlan.png" alt="ildar_image" class="front_item">
+                            <div class="text">Нурлан <br> Сабуров</div>
+                        </div>
+                        <img src="images/card/back.png" alt="back" class="back">
+                    </div>
+                    <div class="card_item" data-framework="nurlan">
+                        <div class="front">
+                            <img src="images/men/nurlan.png" alt="ildar_image" class="front_item">
+                            <div class="text">Нурлан <br> Сабуров</div>
+                        </div>
+                        <img src="images/card/back.png" alt="back" class="back">
+                    </div>        
+                </div>
+            </div>
+        </section>
+
+        <section class="end_body none">
+            <img src="./images/intro/intro_border.png" alt="intro_border" class="intro_border">
+
+            <div class="end_logo_container">
+                <img class="end_logo" src="./images/logo.png" alt="logo">
+            </div>
+                <div class="end_title">Прекрасная работа!</div>
+            <div class="end_line">
+                <img class="end_image" src="./images/end/line.png" alt="people">
+            </div>
+            <div class="end_info">
+                <div class="info_text">
+                    Смотрите новые выпуски любимых шоу эксклюзивно в приложении VK Видео
+                </div>
+                <button class="info_button">скачать</button>
+            </div>
+        </section>
+    
+
+
+    <script src="./scripts/loadGame.js"></script>
+    <script src="./scripts/game.js"></script>
+</body>
+</html>

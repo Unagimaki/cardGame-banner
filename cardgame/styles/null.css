@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 75vw; 
+    overflow: hidden;
+}
+.wrapper {
+    width: inherit;
+    height: inherit;
+}
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+.none {
+    display: none;
+}
+.flex {
+    display: flex;
+}
+.smooth_start {
+    animation: start .5s forwards;
+}
+.smooth_end {
+    animation: end .5s forwards;
+}
+
+@keyframes start {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes end {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.flapper1,
+.flapper2 {
+    height: 19vw;
+    width: 19vw;
+}
+.flapper1 {
+    background: url(../images/confetti/flapper1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: opacity 1s forwards;
+    position: absolute;
+    top: 50vw;
+}
+.flapper2 {
+    background: url(../images/confetti/flapper2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: opacity 1s forwards;
+    position: absolute;
+    top: 50vw;
+}
+.flapper1 {
+    left: 0;
+}
+.flapper2 {
+    right: 0;
+}
+.flapper1.smooth_end {
+    animation: end .5s forwards;
+}
+.flapper2.smooth_end {
+    animation: end .5s forwards;
+}
+.flapper1.smooth_start {
+    animation: start .5s forwards;
+}
+.flapper2.smooth_start {
+    animation: start .5s forwards;
+}
+
+.maskLeft, .maskRight {
+  width: 122px;
+  height: 122px;
+  position: absolute;
+  top: 50%;
+
+}
+.maskLeft {
+    left: 0;
+}
+.maskRight {
+    right: 0;
+}
+.confettiWrapper {
+    position: absolute;
+    z-index: 9999;
+}
+
+.conf_item {
+  width: 2vw;
+  height: 2vw;
+  position: absolute;
+  background-size: contain;
+}

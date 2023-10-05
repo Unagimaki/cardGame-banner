@@ -4,4 +4,4 @@
 
 interactive example:
 
-https://starlit-jalebi-857b13.netlify.app/
+https://card-game-banner.netlify.app/
